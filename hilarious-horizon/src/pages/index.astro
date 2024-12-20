@@ -1,11 +1,42 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/layout.astro"
 ---
 
-<Layout>
-	<Welcome />
+
+<Layout title={"Home"}>
+	<h1>Home</h1>
+	<section id="section">
+		<p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ad, mollitia repudiandae error veniam quae unde accusamus, quis ipsa saepe pariatur hic beatae cumque consequatur vero distinctio totam fugit quisquam!
+		Blanditiis quaerat, consectetur, optio repudiandae ut magnam autem reprehenderit, amet asperiores molestias laudantium eveniet quod quos nihil animi eum exercitationem repellendus consequuntur voluptates laborum totam suscipit nemo accusantium. Illo, itaque?
+		Enim soluta, ad unde consectetur illum voluptate assumenda adipisci rerum quod iusto dolore modi quos animi tempore, recusandae corrupti amet, ratione doloremque. Nulla sed accusantium minus ex atque! Consequuntur, voluptate.
+		Non quia error beatae iure! Pariatur aliquam obcaecati explicabo rem labore cum perferendis. Eaque quia sunt dolorem, voluptatum pariatur adipisci dolorum quaerat tenetur consequatur sed provident! Maxime ipsam at debitis.
+		Saepe odio excepturi consectetur possimus, sapiente commodi maxime nihil, nisi nostrum eveniet nam voluptas corporis eligendi unde nobis? Sed facilis numquam, voluptas ullam laborum aspernatur fuga nihil possimus doloribus architecto?</p>
+		<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptas molestiae assumenda itaque aut a quasi enim est sit. Doloremque omnis natus saepe vitae, quam cum placeat autem! Laborum, alias.
+		Est assumenda quisquam perspiciatis libero, praesentium alias eligendi asperiores excepturi quasi pariatur ullam culpa incidunt optio ea fugiat tempore beatae molestiae possimus. Magni qui dolore soluta, ex dolor exercitationem accusamus.
+		</p>
+		<img class="dog" src="https://media.istockphoto.com/id/482904395/photo/super-dog.jpg?s=612x612&w=0&k=20&c=prOXKvScO099eb9MYycAdtbNqpyUdr01Ae76aMVwp5M=" alt="Happy dog">
+	</section>
 </Layout>
+
+<style>
+	h1{
+		margin-top: 2em;
+		text-align: center;
+	}
+	#section{
+		display: flex;
+		flex-direction: column;
+		justify-content:center ;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.text{
+		width: 100%;
+		padding: 0 2rem;
+	}
+	.dog{
+		max-width: 100%;
+		width: auto;
+		margin: 0 auto;
+	}
+</style>
